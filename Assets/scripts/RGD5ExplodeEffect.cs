@@ -6,7 +6,7 @@ public class RGD5ExplodeEffect : MonoBehaviour
 {
 
 
-    private float explodeForce = 15000f;
+    private float explodeForce = 11000f;
     
     // Start is called before the first frame update
     void Start()
@@ -25,14 +25,13 @@ public class RGD5ExplodeEffect : MonoBehaviour
     {
         if (collider.gameObject.tag == "player")
         {
-            collider.gameObject.GetComponent<playerHP>().loseHP(12);
+            collider.gameObject.GetComponent<playerHP>().loseHP(6);
             Vector3 temp = new Vector3();
             Vector3 explodePosition = transform.position;
             explodePosition.y = 0;
             Vector3 playerPosition = collider.transform.position;
             playerPosition.y = +0.5f;
             Vector3 distanceVector3 = playerPosition - explodePosition;
-            Debug.Log("Explode vector: X=" + distanceVector3.x + " Y=" + distanceVector3.y + " Z=" + distanceVector3.z);
             float distance = Mathf.Sqrt(distanceVector3.x * distanceVector3.x +distanceVector3.y * distanceVector3.y+ distanceVector3.z + distanceVector3.z);
             if (distance > 0)
             {

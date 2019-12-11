@@ -29,5 +29,13 @@ public class RGD5 : MonoBehaviour
         }
 
     }
+
+    void OnCollisionEnter(Collision collision) 
+    {
+        if (collision.gameObject.tag == "bottom")
+        {
+            Destroy(this.gameObject);
+        }
+    }
     
 }

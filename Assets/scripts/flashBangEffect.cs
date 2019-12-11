@@ -25,8 +25,8 @@ public class flashBangEffect : MonoBehaviour
             float flashStartTime = Time.time;
             float flashExpectedEndTime = flashStartTime + 3.5f;
             Vector3 flashPlanePosition=new Vector3(0f,12.5f,-11f);
-            Instantiate(flashBangPlane, flashPlanePosition, Quaternion.identity);
-            flashBangPlane.GetComponent<flashBngPlaneController>().selfDestroyTime = flashExpectedEndTime;
+            GameObject _White=Instantiate(flashBangPlane, flashPlanePosition, Quaternion.identity);
+            _White.GetComponent<flashBngPlaneController>().selfDestroyTime = flashExpectedEndTime;
         }
     }
 }

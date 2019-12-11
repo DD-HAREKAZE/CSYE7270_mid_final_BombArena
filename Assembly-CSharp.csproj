@@ -63,6 +63,7 @@
      <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+     <Compile Include="Assets\scripts\fireControlSystem.cs" />
      <Compile Include="Assets\scripts\Flash.cs" />
      <Compile Include="Assets\scripts\flashBang.cs" />
      <Compile Include="Assets\scripts\flashBangEffect.cs" />
@@ -80,10 +81,12 @@
      <Compile Include="Assets\scripts\player.cs" />
      <Compile Include="Assets\scripts\playerHP.cs" />
      <Compile Include="Assets\scripts\playerInventory.cs" />
+     <Compile Include="Assets\scripts\reStartButtonController.cs" />
      <Compile Include="Assets\scripts\RGD5.cs" />
      <Compile Include="Assets\scripts\RGD5ExplodeEffect.cs" />
      <Compile Include="Assets\scripts\RGD5MarkController.cs" />
      <Compile Include="Assets\scripts\RGD5ParticleController.cs" />
+     <Compile Include="Assets\scripts\startGameButtonController.cs" />
      <Compile Include="Assets\scripts\Stun.cs" />
      <Compile Include="Assets\scripts\test.cs" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />

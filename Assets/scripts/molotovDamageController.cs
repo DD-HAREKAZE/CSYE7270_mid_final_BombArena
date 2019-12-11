@@ -18,6 +18,10 @@ public class molotovDamageController : MonoBehaviour
 
     void OnTriggerStay(Collider collider) 
     {
-        collider.GetComponent<playerHP>().loseHP(6*Time.deltaTime);
+        if (collider.gameObject.tag == "player") 
+        {
+            collider.GetComponent<playerHP>().loseHP(6 * Time.deltaTime);
+        }
+        
     }
 }

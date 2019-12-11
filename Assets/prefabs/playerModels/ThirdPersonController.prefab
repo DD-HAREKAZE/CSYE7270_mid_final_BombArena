@@ -1472,6 +1472,9 @@ GameObject:
   - component: {fileID: 13615390}
   - component: {fileID: 11444856}
   - component: {fileID: 11469404}
+  - component: {fileID: -3238425627467422724}
+  - component: {fileID: 4747862735298864985}
+  - component: {fileID: -1127970504644181191}
   m_Layer: 0
   m_Name: ThirdPersonController
   m_TagString: Untagged
@@ -1577,6 +1580,57 @@ MonoBehaviour:
   m_MoveSpeedMultiplier: 1
   m_AnimSpeedMultiplier: 1
   m_GroundCheckDistance: 0.3
+--- !u!114 &-3238425627467422724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f97b50c141fcda340b3c1f154f1aa3a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 0
+  foreHPBar: {fileID: 0}
+--- !u!114 &4747862735298864985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149790}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 256ad97af3170d64ba46c15425a7b603, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RGD5Amount: 0
+  molotovAmount: 0
+  flashAmount: 0
+  RGD5Amount_UI: {fileID: 0}
+  molotovAmount_UI: {fileID: 0}
+  flashAmount_UI: {fileID: 0}
+--- !u!114 &-1127970504644181191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149790}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b351b50edbbe2246be7654d64035224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RGD5: {fileID: 0}
+  flashBang: {fileID: 0}
+  molotov: {fileID: 0}
+  RGD5UIIcon: {fileID: 0}
+  flashBangUIIcon: {fileID: 0}
+  molotovUIIcon: {fileID: 0}
+  selectedWeaponUIIcon: {fileID: 0}
 --- !u!1 &150244
 GameObject:
   m_ObjectHideFlags: 0
