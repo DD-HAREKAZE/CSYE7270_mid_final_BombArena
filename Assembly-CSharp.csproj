@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\playerunitController.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -78,7 +79,10 @@
      <Compile Include="Assets\scripts\molotovDamageController.cs" />
      <Compile Include="Assets\scripts\molotovEffect.cs" />
      <Compile Include="Assets\scripts\molotovMarkController.cs" />
+     <Compile Include="Assets\scripts\numberOfPlayerInRoom.cs" />
+     <Compile Include="Assets\scripts\numberOfPlayerInRoom_NM.cs" />
      <Compile Include="Assets\scripts\player.cs" />
+     <Compile Include="Assets\scripts\PlayerConnection.cs" />
      <Compile Include="Assets\scripts\playerHP.cs" />
      <Compile Include="Assets\scripts\playerInventory.cs" />
      <Compile Include="Assets\scripts\reStartButtonController.cs" />

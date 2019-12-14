@@ -8,6 +8,8 @@ TagManager:
   - molotovEffect
   - bottom
   - player
+  - NM
+  - fakePlayer
   layers:
   - Default
   - TransparentFX

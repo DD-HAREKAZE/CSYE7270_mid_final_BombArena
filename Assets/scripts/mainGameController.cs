@@ -1,13 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
-public class mainGameController : MonoBehaviour
+public class mainGameController : NetworkBehaviour
 {
     // Start is called before the first frame update
     float startTime;
     float t1;//next item to be refreshed
 
+    public GameObject playerPrefab;
 
     public GameObject ground;
     public GameObject RGD5Mark;
@@ -23,9 +25,15 @@ public class mainGameController : MonoBehaviour
 
     void Start()
     {
+        if (isLocalPlayer == false) { return; }
         groundSpeed = 0.25f;
         startTime = Time.time;
         t1 = startTime + 1.0f;
+        CmdSpawnTwoPlayers();
+    }
+    void OnLoad() 
+    {
+        startTime = Time.time;
     }
 
     // Update is called once per frame
@@ -79,5 +87,13 @@ public class mainGameController : MonoBehaviour
             t1 = t1 + 0.8f;
         }
         //end refresh item on ground
+    }
+
+    [Command]
+    void CmdSpawnTwoPlayers()
+    {
+        Vector3 SP1=new Vector3(-8f,0f,0f);
+        GameObject _player = Instantiate(playerPrefab,SP1,Quaternion.identity);
+        NetworkServer.SpawnWithClientAuthority(_player, connectionToClient);
     }
 }
